@@ -83,7 +83,7 @@ O botão cobre é a ação primária. Links em texto são secundários, com subl
 
 ### Navigation and data display
 
-A marca usa um monograma T vetorial, formado por pilares, viga e acento em cobre — sem fundo raster ou caixa visual. O wordmark acessível e responsivo permanece `TAVARES CONSTRUÇÃO`, com o slogan `Construindo os sonhos.`. A navbar fixa alterna de sobreposição clara no hero para grafite translúcido após a rolagem; nas páginas claras, começa com superfície clara e contraste escuro. As grades de projetos mantêm proporção arquitetônica e revelação escalonada.
+A marca usa o lockup fornecido pelo cliente, isolado em PNG transparente para não introduzir uma caixa escura na navbar. O wordmark acessível e responsivo permanece `TAVARES CONSTRUÇÃO`, com o slogan `Construindo os sonhos.`. A navbar fixa alterna de sobreposição clara no hero para grafite translúcido após a rolagem; nas páginas claras, começa com superfície clara e contraste escuro. As grades de projetos mantêm proporção arquitetônica e revelação escalonada.
 
 ### Forms and overlays
 
