@@ -92,13 +92,12 @@
   .brand--compact .brand__wordmark small{display:none}
 }
 
-/* Customer supplied logo trial: whole lockup stays intact at every breakpoint. */
-.brand__client-mark{width:42px;height:42px;display:block;object-fit:contain;flex:0 0 auto;background:#101417}
-.brand__client-logo{width:132px;height:132px;max-width:none;object-fit:cover;flex:0 0 auto;background:#101417}
+/* Clean vector mark: no raster backdrop in either header variant. */
+.brand__mark{width:35px;height:35px;display:block;flex:0 0 auto;color:inherit;overflow:visible}
 .brand--full{align-items:center!important}
 .brand--full .brand__wordmark{gap:7px}
 @media(max-width:800px){
-  .brand--compact .brand__client-mark{width:38px;height:38px}
+  .brand--compact .brand__mark{width:32px;height:32px}
   .brand--full{align-items:flex-start!important;flex-direction:column;gap:12px}
-  .brand--full .brand__client-logo{width:108px;height:108px}
+  .brand--full .brand__mark{width:54px;height:54px}
 }
