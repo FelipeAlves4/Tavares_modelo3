@@ -54,3 +54,54 @@
 .button{color:var(--ink)}
 .brand--compact small{font-size:7px}
 @media(max-width:800px){.brand--compact small{font-size:6px}}
+
+/* Fixed navigation and vector identity — the header remains an overlay, never a layout spacer. */
+.header.header--fixed{position:fixed;inset:0 0 auto;z-index:50;padding-top:env(safe-area-inset-top);border-bottom:1px solid transparent;background:transparent;color:var(--paper);transition:background-color .38s ease,color .38s ease,border-color .38s ease,box-shadow .38s ease;will-change:background-color}
+.header--fixed .header__in{height:87px}
+.header--fixed.header--hero{background:transparent;color:var(--paper)}
+.header--fixed.header--scrolled{background:rgba(20,28,34,.88);border-bottom-color:rgba(248,248,245,.16);box-shadow:0 6px 24px rgba(6,10,13,.12);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--paper)}
+.header--fixed.header--light{background:rgba(248,248,245,.93);border-bottom-color:var(--line);box-shadow:0 5px 22px rgba(20,28,34,.06);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--ink)}
+.header--fixed .nav__contact{border-color:rgba(248,248,245,.48)}
+.header--fixed.header--light .nav__contact{border-color:var(--line)}
+.brand.brand--compact,.brand.brand--full{width:auto;display:inline-flex;align-items:center;gap:10px;color:inherit;line-height:1;text-decoration:none}
+.brand__mark{display:block;flex:0 0 auto;color:inherit;overflow:visible}
+.brand__wordmark{display:grid;gap:5px;min-width:0}
+.brand__wordmark strong{font-family:var(--font-display);font-weight:600;letter-spacing:.075em;white-space:nowrap}
+.brand__wordmark small{font-family:var(--font-body);font-weight:600;letter-spacing:.135em;text-transform:none;white-space:nowrap;opacity:.72}
+.brand--compact .brand__mark{width:35px;height:35px}
+.brand--compact .brand__wordmark{gap:4px}
+.brand--compact .brand__wordmark strong{font-size:11px}
+.brand--compact .brand__wordmark small{font-size:7px}
+.brand--full .brand__mark{width:66px;height:66px}
+.brand--full .brand__wordmark strong{font-size:18px}
+.brand--full .brand__wordmark small{font-size:10px}
+.header--fixed .brand--dark{color:var(--paper)}
+.header--fixed .brand--light{color:var(--ink)}
+#manifesto{scroll-margin-top:calc(104px + env(safe-area-inset-top))}
+
+@media(max-width:800px){
+  .header.header--fixed{padding-top:env(safe-area-inset-top)}
+  .header--fixed .header__in{height:68px}
+  .header--fixed.header--menu-open{background:rgba(20,28,34,.98);border-bottom-color:rgba(248,248,245,.14);box-shadow:0 8px 28px rgba(6,10,13,.2);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--paper)}
+  .header--fixed.header--menu-open .brand{color:var(--paper)}
+  .header--fixed .menu-button{width:44px;height:44px;display:inline-grid;place-items:center;margin-right:-8px}
+  .header--fixed .nav--open{top:100%;left:0;right:0;min-height:calc(100svh - 68px - env(safe-area-inset-top));padding:34px var(--gutter) 44px;background:rgba(20,28,34,.98);color:var(--paper);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+  .header--fixed .nav--open .nav__contact{border-color:rgba(248,248,245,.48)}
+  .brand--compact .brand__mark{width:32px;height:32px}
+  .brand--compact .brand__wordmark strong{font-size:9px;letter-spacing:.065em}
+  .brand--compact .brand__wordmark small{display:none}
+}
+
+/* Customer supplied logo trial: cropped architectural mark in navigation, complete lockup in footer. */
+.brand__client-mark{width:35px;height:35px;display:grid;place-items:start;overflow:hidden;flex:0 0 auto;border:1px solid rgba(248,248,245,.42);background:#101417}
+.brand__client-mark img{display:block;width:75px;max-width:none;transform:translate(-10px,-2px)}
+.brand__client-logo{width:132px;height:132px;max-width:none;object-fit:cover;flex:0 0 auto;background:#101417}
+.brand--full{align-items:center!important}
+.brand--full .brand__wordmark{gap:7px}
+.header--fixed.header--light .brand__client-mark{border-color:rgba(18,23,27,.28)}
+@media(max-width:800px){
+  .brand--compact .brand__client-mark{width:32px;height:32px}
+  .brand--compact .brand__client-mark img{width:69px;transform:translate(-9px,-2px)}
+  .brand--full{align-items:flex-start!important;flex-direction:column;gap:12px}
+  .brand--full .brand__client-logo{width:108px;height:108px}
+}

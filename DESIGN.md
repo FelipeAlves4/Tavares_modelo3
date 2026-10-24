@@ -1,6 +1,6 @@
 ---
 version: alpha
-name: "TAVARES Construção — Modelo 03"
+name: "TAVARES CONSTRUÇÃO — Modelo 03"
 description: "Marca residencial de alto padrão cuja engenharia aparece como precisão silenciosa, não como estética corporativa."
 colors:
   primary: "#E36B3D"
@@ -31,7 +31,7 @@ components:
   story: { backgroundColor: "#12171B", textColor: "#F8F8F5" }
 ---
 
-# TAVARES Construção — Modelo 03 Design System
+# TAVARES CONSTRUÇÃO — Modelo 03 Design System
 
 ## Overview
 
@@ -57,7 +57,7 @@ Uma residência brasileira de alto padrão ao entardecer: a piscina e a luz inte
 
 ## Typography
 
-`Space Grotesk` é a voz geométrica para headline, marca e dados de processo. `Manrope` sustenta leitura corrente. `Georgia` aparece somente como ênfase editorial. A marca textual é sempre “TAVARES Construção” e “Construindo os sonhos.”, sem reintroduzir o slogan legado da imagem de logo.
+`Space Grotesk` é a voz geométrica para headline, marca e dados de processo. `Manrope` sustenta leitura corrente. `Georgia` aparece somente como ênfase editorial. A marca textual é sempre “TAVARES CONSTRUÇÃO” e “Construindo os sonhos.”, sem reintroduzir o slogan legado da imagem de logo.
 
 ## Layout
 
@@ -83,7 +83,7 @@ O botão cobre é a ação primária. Links em texto são secundários, com subl
 
 ### Navigation and data display
 
-A marca usa o símbolo oficial recortado e wordmark em HTML para que a assinatura atual seja consistente em cabeçalho claro, escuro e rodapé. As grades de projetos mantêm proporção arquitetônica e revelação escalonada.
+Para o teste atual, a marca usa o lockup fornecido pelo cliente: um recorte do símbolo arquitetônico na navbar e a composição integral no rodapé. O wordmark acessível e responsivo permanece `TAVARES CONSTRUÇÃO`, com o slogan `Construindo os sonhos.`. A navbar fixa alterna de sobreposição clara no hero para grafite translúcido após a rolagem; nas páginas claras, começa com superfície clara e contraste escuro. As grades de projetos mantêm proporção arquitetônica e revelação escalonada.
 
 ### Forms and overlays
 
