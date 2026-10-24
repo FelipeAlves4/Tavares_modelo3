@@ -11,12 +11,12 @@ import ProjectDetail from './pages/ProjectDetail'
 import Projects from './pages/Projects'
 import Services from './pages/Services'
 const meta: Record<string, { title: string; description: string }> = {
-  '/': { title: 'TAVARES Construção | Engineering Prestige', description: 'TAVARES Construção: engenharia e construção de alto padrão, com planejamento, precisão e arquitetura contemporânea.' },
-  '/projetos': { title: 'Projetos | TAVARES Construção', description: 'Projetos demonstrativos de construção residencial, corporativa e comercial da TAVARES Construção.' },
-  '/servicos': { title: 'Serviços | TAVARES Construção', description: 'Construção residencial, corporativa, planejamento e gerenciamento de obras.' },
-  '/como-construimos': { title: 'Como construímos | TAVARES Construção', description: 'Conheça o método demonstrativo da TAVARES Construção, do planejamento à entrega.' },
-  '/sobre': { title: 'Sobre | TAVARES Construção', description: 'A filosofia da TAVARES Construção: clareza, rigor e presença em cada projeto.' },
-  '/contato': { title: 'Contato | TAVARES Construção', description: 'Inicie uma conversa sobre possibilidades para o seu próximo projeto.' }
+  '/': { title: 'TAVARES Construção | Construindo os sonhos.', description: 'TAVARES Construção: residências de alto padrão, precisão construtiva e arquitetura contemporânea para construir os sonhos.' },
+  '/projetos': { title: 'Projetos | TAVARES Construção', description: 'Residências e projetos de alto padrão da TAVARES Construção — construindo os sonhos com precisão.' },
+  '/servicos': { title: 'Serviços | TAVARES Construção', description: 'Construção residencial, planejamento e gerenciamento de obras para construir os sonhos.' },
+  '/como-construimos': { title: 'Como construímos | TAVARES Construção', description: 'Conheça o método da TAVARES Construção, do planejamento à entrega de cada sonho.' },
+  '/sobre': { title: 'Sobre | TAVARES Construção', description: 'TAVARES Construção: arquitetura, clareza e rigor para construir os sonhos.' },
+  '/contato': { title: 'Contato | TAVARES Construção', description: 'Inicie uma conversa com a TAVARES Construção sobre o seu próximo sonho.' }
 }
 function setMeta(name: string, value: string) { const element = document.querySelector(`meta[name="${name}"]`); if (element) element.setAttribute('content', value) }
 function setOg(property: string, value: string) { const element = document.querySelector(`meta[property="${property}"]`); if (element) element.setAttribute('content', value) }
