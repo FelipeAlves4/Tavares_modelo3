@@ -1,0 +1,5 @@
+import { useMemo, useState } from 'react'
+import { PageIntro } from '../components/ui/PageIntro'
+import { ProjectGrid } from '../components/projects/ProjectGrid'
+import { categories, projects, type Category } from '../data/projects'
+export default function Projects() { const [active, setActive] = useState<Category | 'Todos'>('Todos'); const visible = useMemo(() => active === 'Todos' ? projects : projects.filter(p => p.category === active), [active]); return <><PageIntro number="01 / PORTFÓLIO" title={<>Projetos que<br/><em>materializam visões.</em></>} text="Uma seleção conceitual para demonstrar escopo, ritmo e linguagem visual."/><main className="shell projects-page"><div className="filters" role="group" aria-label="Filtrar projetos">{categories.map(category => <button className={active === category ? 'active' : ''} onClick={() => setActive(category)} key={category}>{category}</button>)}</div>{visible.length ? <ProjectGrid items={visible}/> : <p className="empty">Nenhum projeto encontrado nesta categoria.</p>}<p className="disclaimer">Todos os projetos, descrições e localizações são ilustrativos.</p></main></> }
