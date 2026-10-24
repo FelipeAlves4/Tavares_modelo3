@@ -36,7 +36,7 @@ O projeto usa Motion para revelação estável de imagens e entradas de conteúd
 
 ## Imagens e limitações demonstrativas
 
-- `hero-engineering.png`: imagem gerada para esta proposta com ferramenta de imagem da OpenAI.
+- `hero-engineering.webp`: imagem gerada para esta proposta com ferramenta de imagem da OpenAI e otimizada para entrega web.
 - Demais imagens: fotografias do [Unsplash](https://unsplash.com), registradas com seus URLs de origem em [`IMAGE_SOURCES.md`](IMAGE_SOURCES.md).
 - Projetos, locais, descrições, etapas e contato são conteúdos ilustrativos; não representam dados, obras ou canais reais da TAVARES Construção.
 

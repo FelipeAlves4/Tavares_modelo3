@@ -4,7 +4,7 @@ Todas as imagens abaixo são ilustrativas e foram baixadas localmente para evita
 
 | Arquivo | Fonte |
 | --- | --- |
-| `hero-engineering.png` | Gerada com ferramenta de imagens da OpenAI para esta proposta; não corresponde a obra real. |
+| `hero-engineering.webp` | Gerada com ferramenta de imagens da OpenAI para esta proposta e otimizada localmente em WebP; não corresponde a obra real. |
 | `project-villa.jpg` | https://images.unsplash.com/photo-1600585154340-be6161a56a0c |
 | `project-concrete.jpg` | https://images.unsplash.com/photo-1511818966892-d7d671e672a2 |
 | `project-office.jpg` | https://images.unsplash.com/photo-1497366754035-f200968a6e72 |
