@@ -25,7 +25,7 @@ export function Header() {
 
   const tone = overHero ? 'header--hero' : isHeroRoute ? 'header--scrolled' : 'header--light'
   return <header className={`header header--fixed ${tone} ${open ? 'header--menu-open' : ''}`}><div className="shell header__in"><Brand compact variant={tone === 'header--light' ? 'light' : 'dark'} />
-    <nav id="mobile-menu" className={open ? 'nav nav--open' : 'nav'} aria-label="Navegação principal">{links.map(([label, to]) => <NavLink key={to} to={to}>{label}</NavLink>)}<Link className="nav__contact" to="/contato">Iniciar conversa <ArrowUpRight size={15}/></Link></nav>
+    <nav id="mobile-menu" className={open ? 'nav nav--open' : 'nav'} aria-label="Navegação principal"><p className="nav__eyebrow">00 / NAVEGAÇÃO</p>{links.map(([label, to]) => <NavLink className="nav__link" key={to} to={to}>{label}</NavLink>)}<div className="nav__footer"><p>Birigui, SP</p><Link className="nav__contact" to="/contato">Iniciar conversa <ArrowUpRight size={15}/></Link></div></nav>
     <button className="menu-button" aria-label={open ? 'Fechar menu' : 'Abrir menu'} aria-expanded={open} aria-controls="mobile-menu" onClick={() => setOpen(value => !value)}>{open ? <X/> : <Menu/>}</button>
   </div></header>
 }

@@ -102,3 +102,111 @@
   .brand--full{align-items:flex-start!important;flex-direction:column;gap:12px}
   .brand--full .brand__client-logo{width:108px;height:108px}
 }
+
+/* Mobile navigation: a full-height, technical menu sheet that belongs to the
+   Engineering Prestige language instead of a generic collapsed link list. */
+.nav__eyebrow,.nav__footer>p{display:none}.nav__footer{display:contents}
+
+@media(max-width:800px){
+  .header--fixed .nav--open{
+    display:grid;
+    grid-template-rows:auto repeat(4,minmax(0,1fr)) auto;
+    gap:0;
+    min-height:calc(100svh - 68px - env(safe-area-inset-top));
+    overflow-y:auto;
+    padding:clamp(28px,6vh,48px) max(19px,env(safe-area-inset-left)) max(30px,env(safe-area-inset-bottom));
+    background:
+      linear-gradient(135deg,rgba(227,107,61,.10),transparent 36%),
+      linear-gradient(0deg,rgba(9,13,16,.18),transparent 35%),
+      rgba(20,28,34,.985);
+    counter-reset:mobile-navigation;
+  }
+  .header--fixed .nav--open .nav__eyebrow{
+    display:block;
+    margin:0 0 clamp(16px,3vh,28px);
+    color:#e6ab93;
+    font:600 10px/1 var(--display);
+    letter-spacing:.16em;
+  }
+  .header--fixed .nav--open .nav__link{
+    display:grid;
+    grid-template-columns:38px minmax(0,1fr) 28px;
+    align-items:center;
+    gap:10px;
+    min-height:58px;
+    border-top:1px solid rgba(248,248,245,.18);
+    color:rgba(248,248,245,.88);
+    font:600 clamp(22px,7vw,31px)/1 var(--display);
+    letter-spacing:-.055em;
+    position:relative;
+    transition:color .24s ease,transform .24s ease;
+    counter-increment:mobile-navigation;
+  }
+  .header--fixed .nav--open .nav__link:before{
+    content:'0' counter(mobile-navigation);
+    color:#e6ab93;
+    font:500 10px/1 var(--display);
+    letter-spacing:.1em;
+  }
+  .header--fixed .nav--open .nav__link:after{
+    position:static;
+    display:block;
+    width:22px;
+    height:1px;
+    margin:0;
+    background:var(--copper);
+    content:'';
+    opacity:.55;
+    transform:none;
+    transition:width .24s ease,opacity .24s ease;
+  }
+  .header--fixed .nav--open .nav__link:hover,
+  .header--fixed .nav--open .nav__link:focus-visible,
+  .header--fixed .nav--open .nav__link.active{color:var(--paper);transform:translateX(5px)}
+  .header--fixed .nav--open .nav__link:hover:after,
+  .header--fixed .nav--open .nav__link:focus-visible:after,
+  .header--fixed .nav--open .nav__link.active:after{width:28px;opacity:1}
+  .header--fixed .nav--open .nav__footer{
+    display:grid;
+    grid-template-columns:1fr auto;
+    align-items:end;
+    gap:18px;
+    padding-top:clamp(18px,4vh,32px);
+    border-top:1px solid rgba(248,248,245,.3);
+  }
+  .header--fixed .nav--open .nav__footer p{
+    margin:0;
+    color:rgba(248,248,245,.58);
+    font:600 10px/1.25 var(--display);
+    letter-spacing:.13em;
+    text-transform:uppercase;
+  }
+  .header--fixed .nav--open .nav__contact{
+    min-height:48px;
+    padding:0 14px;
+    border-color:rgba(248,248,245,.46);
+    font-size:11px;
+    white-space:nowrap;
+  }
+}
+
+/* Mobile hero refinement: preserve the editorial hierarchy while reserving a
+   whole line for the city and state, never the state in isolation. */
+@media(max-width:800px){
+  .header--fixed .header__in{height:72px}
+  .header--fixed .nav--open{min-height:calc(100svh - 72px - env(safe-area-inset-top))}
+  .header--fixed .brand--compact{gap:8px;min-width:0}
+  .brand--compact .brand__client-mark{width:42px;height:42px}
+  .brand--compact .brand__wordmark strong{font-size:10px;letter-spacing:.07em}
+  .header--fixed .menu-button{width:48px;height:48px;margin-right:-10px}
+  .hero--asymmetric .hero__content{
+    padding-top:clamp(102px,15svh,126px);
+    padding-bottom:clamp(30px,5svh,46px);
+  }
+  .hero--asymmetric .hero__index{
+    max-width:34ch;
+    line-height:1.45;
+    text-wrap:balance;
+  }
+  .hero--asymmetric .hero__location{white-space:nowrap}
+}
